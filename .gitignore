@@ -16,7 +16,7 @@ migrations/
 
 *.sublime-project
 *.sublime-workspace
-*poetry
+poetry.lock
 
 static/
 deals/static/

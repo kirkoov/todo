@@ -29,3 +29,4 @@ htmlcov/
 .coverage.*
 coverage.xml
 *.cover
+/home/kk/Documents/BurSync/Dev/todo/poetry.lock

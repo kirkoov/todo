@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "todo"
+version = "0.1.0"
+description = "A small Django-based app needed for testing trials under the Ya.Pr curricilum for back-enders"
+authors = ["Your Name <you@example.com>"]
+license = "MIT-like?"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9.16"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

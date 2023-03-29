@@ -16,6 +16,7 @@ migrations/
 
 *.sublime-project
 *.sublime-workspace
+poetry*
 
 static/
 deals/static/

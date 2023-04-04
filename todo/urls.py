@@ -9,9 +9,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-
-# django.urls.resolvers.URLPattern
-
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)

@@ -1,6 +1,5 @@
 from django.db import models
-# pip3 install pytils не забыть установить!
-from pytils.translit import slugify
+from pytils.translit import slugify  # type: ignore[import]
 
 
 class Task(models.Model):
@@ -15,7 +14,7 @@ class Task(models.Model):
         help_text='Опишите суть задачи'
     )
     slug = models.SlugField(
-        'Адрес для страницы с задачей',
+        'Адре`с для страницы с задачей',
         max_length=100,
         unique=True,
         blank=True,

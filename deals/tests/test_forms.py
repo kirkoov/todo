@@ -9,6 +9,7 @@ from django.urls import reverse
 from deals.forms import TaskCreateForm
 from deals.models import Task
 
+
 # Создаем временную папку для медиа-файлов;
 # на момент теста медиа папка будет переопределена
 TEMP_MEDIA_ROOT = tempfile.mkdtemp(dir=settings.BASE_DIR)

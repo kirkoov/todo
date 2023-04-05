@@ -3,6 +3,7 @@ from django.test import Client, TestCase
 
 from deals.models import Task
 
+
 User = get_user_model()
 
 

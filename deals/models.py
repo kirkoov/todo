@@ -1,5 +1,6 @@
 from django.db import models
-from pytils.translit import slugify  # type: ignore[import]
+
+from pytils.translit import slugify
 
 
 class Task(models.Model):

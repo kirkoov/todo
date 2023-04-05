@@ -5,6 +5,7 @@ from django.urls import reverse
 
 from deals.models import Task
 
+
 User = get_user_model()
 
 

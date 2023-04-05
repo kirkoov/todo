@@ -26,11 +26,10 @@ pytest = "^7.2.2"
 [tool.mypy]
 mypy_path = "./todo"
 plugins = ["mypy_django_plugin.main"]
-strict_optional = "True"
+strict_optional = true
 
 [tool.django-stubs]
 django_settings_module = "todo.settings"
-
 
 [build-system]
 requires = ["poetry-core"]

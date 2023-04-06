@@ -3,6 +3,8 @@ env/
 venv/
 .venv
 .venv/
+.mypy*
+.ruff*
 
 __pycache__/
 *.py[cod]
@@ -28,5 +30,3 @@ htmlcov/
 .coverage.*
 coverage.xml
 *.cover
-/home/kk/Documents/BurSync/Dev/todo/poetry.lock
-/home/kk/Documents/BurSync/Dev/todo/poetry.lock

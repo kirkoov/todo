@@ -36,6 +36,33 @@ attrs = ">=20"
 exceptiongroup = {version = "*", markers = "python_version < \"3.11\""}
 
 [[package]]
+name = "chardet"
+version = "5.1.0"
+description = "Universal encoding detector for Python 3"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "chardet-5.1.0-py3-none-any.whl", hash = "sha256:362777fb014af596ad31334fde1e8c327dfdb076e1960d1694662d46a6917ab9"},
+    {file = "chardet-5.1.0.tar.gz", hash = "sha256:0d62712b956bc154f85fb0a266e2a3c5913c2967e00348701b32411d6def31e5"},
+]
+
+[[package]]
+name = "click"
+version = "8.1.3"
+description = "Composable command line interface toolkit"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "click-8.1.3-py3-none-any.whl", hash = "sha256:bb4d8133cb15a609f44e8213d9b391b0809795062913b383c62be0ee95b1db48"},
+    {file = "click-8.1.3.tar.gz", hash = "sha256:7682dc8afb30297001674575ea00d1814d808d6a36af415a82bd481d37ba7b8e"},
+]
+
+[package.dependencies]
+colorama = {version = "*", markers = "platform_system == \"Windows\""}
+
+[[package]]
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
@@ -46,6 +73,24 @@ files = [
     {file = "colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
     {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
 ]
+
+[[package]]
+name = "deptry"
+version = "0.8.0"
+description = "A command line utility to check for obsolete, missing and transitive dependencies in a Python project."
+category = "dev"
+optional = false
+python-versions = ">=3.7,<4.0"
+files = [
+    {file = "deptry-0.8.0-py3-none-any.whl", hash = "sha256:12f161748907781a5f6e6931694b40db7af7e0aa4b7888334a677cd4670daf7a"},
+    {file = "deptry-0.8.0.tar.gz", hash = "sha256:b15a31d4bc2c074de834ba4207b2f03e49a4bea8cb73e14e7376a26431b9c606"},
+]
+
+[package.dependencies]
+chardet = ">=4.0.0"
+click = ">=8.0.0,<9.0.0"
+pathspec = ">=0.9.0"
+tomli = {version = ">=2.0.1,<3.0.0", markers = "python_version < \"3.11\""}
 
 [[package]]
 name = "django"
@@ -237,6 +282,18 @@ python-versions = ">=3.7"
 files = [
     {file = "packaging-23.0-py3-none-any.whl", hash = "sha256:714ac14496c3e68c99c29b00845f7a2b85f3bb6f1078fd9f72fd20f0570002b2"},
     {file = "packaging-23.0.tar.gz", hash = "sha256:b6ad297f8907de0fa2fe1ccbd26fdaf387f5f47c7275fedf8cce89f99446cf97"},
+]
+
+[[package]]
+name = "pathspec"
+version = "0.11.1"
+description = "Utility library for gitignore style pattern matching of file paths."
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "pathspec-0.11.1-py3-none-any.whl", hash = "sha256:d8af70af76652554bd134c22b3e8a1cc46ed7d91edcdd721ef1a0c51a84a5293"},
+    {file = "pathspec-0.11.1.tar.gz", hash = "sha256:2798de800fa92780e33acca925945e9a19a133b715067cf165b8866c15a31687"},
 ]
 
 [[package]]
@@ -538,4 +595,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9.16"
-content-hash = "0bc682adc65caf0c6d237f4d5252ff0d1004c292b2ac6047c58c6e1dc3a82af8"
+content-hash = "ecde08ce3b765d37543a59f07049ead5c0a95cc180c2f080c1dee7511504947c"

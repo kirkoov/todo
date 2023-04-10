@@ -1,1 +1,1 @@
-# A small todo app for testing trials via virtual databases I guesss
+# A small todo app to showcase testing basics, I guess now.

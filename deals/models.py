@@ -5,17 +5,17 @@ from pytils.translit import slugify
 
 class Task(models.Model):
     title = models.CharField(
-        'Заголовок',
+        verbose_name='Заголовок',
         default='Значение по умолчанию',
         max_length=100,
         help_text='Дайте короткое название задаче'
     )
     text = models.TextField(
-        'Текст',
+        verbose_name='Текст',
         help_text='Опишите суть задачи'
     )
     slug = models.SlugField(
-        'Адрес для страницы с задачей',
+        verbose_name='Адрес для страницы с задачей',
         max_length=100,
         unique=True,
         blank=True,
@@ -23,7 +23,7 @@ class Task(models.Model):
                    'латиницу, цифры, дефисы и знаки подчёркивания')
     )
     image = models.ImageField(
-        'Картинка',
+        verbose_name='Картинка',
         upload_to='tasks/',
         blank=True,
         null=True,

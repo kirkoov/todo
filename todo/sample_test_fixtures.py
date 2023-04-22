@@ -19,12 +19,14 @@ class TestExample(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         """Вызывается один раз перед запуском всех тестов класса."""
+        super().setUpClass()  # Only when testing under Django
         print('├──setUpClass: called once b4 all tests by this class')
         cls.calc = MadCalculator()
 
     @classmethod
     def tearDownClass(cls):
         """Вызывается один раз после запуска всех тестов класса."""
+        super().tearDownClass()  # Only when testing under Django
         print('\n├──tearDownClass: called once AFTER all tests by this class')
         del(cls.calc)
 

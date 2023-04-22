@@ -63,7 +63,7 @@ class TaskModelTest(TestCase):
         length_slug = len(task.slug)
         self.assertEqual(max_length_slug, length_slug)
 
-    def test_object_name_is_title_fild(self):
+    def test_object_name_is_title_field(self):
         """В поле __str__  объекта task записано значение поля task.title."""
         task = TaskModelTest.task
         expected_object_name = task.title

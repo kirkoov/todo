@@ -11,7 +11,6 @@ class TaskURLTests(TestCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-
         # Создадим запись в БД для проверки доступности адреса task/test-slug/
         Task.objects.create(
             title='Тестовый заголовок',

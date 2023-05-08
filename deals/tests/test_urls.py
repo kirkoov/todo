@@ -22,9 +22,9 @@ class TaskURLTests(TestCase):
         # Создаем неавторизованный клиент
         self.guest_client = Client()
         # Создаем авторизованый клиент
-        self.user = User.objects.create_user(username='StasBasov')
-        self.authorized_client = Client()
-        self.authorized_client.force_login(self.user)
+        # self.user = User.objects.create_user(username='StasBasov')
+        # self.authorized_client = Client()
+        # self.authorized_client.force_login(self.user)
 
     # Проверяем общедоступные страницы
     def test_home_url_exists_at_desired_location(self):

@@ -106,4 +106,4 @@ class TaskPagesTests(TestCase):
         """Предустановленнное значение формы."""
         response = self.guest_client.get(reverse('deals:home'))
         title_inital = response.context['form'].fields['title'].initial
-        self.assertEqual(title_inital, 'Значение по-умолчанию')
+        self.assertEqual(title_inital, 'Значение по умолчанию')
